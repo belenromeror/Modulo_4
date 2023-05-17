@@ -48,7 +48,7 @@ class Persona:
 persona_1 = Persona("Pedro", "Vivas", "Masculino", 20, 1.78, 68)
 persona_2 = Persona("Juan", "Camargo", "Masculino", 18, 1.8, 75)
 
-# Modificar los atributos de los objetos
+# Modificar los atributos solicitados
 persona_1.set_edad(21)
 persona_2.set_apellidos("Santiago")
 
