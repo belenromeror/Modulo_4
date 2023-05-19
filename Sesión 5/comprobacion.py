@@ -22,4 +22,4 @@ c = C()
 c.metodo_a()
 c.metodo_b()
 c.metodo_c()
-print(isinstance(c,A))
+
