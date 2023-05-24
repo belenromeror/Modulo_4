@@ -1,7 +1,6 @@
 class Persona:
-    def __init__(self, nombre, estado) -> None:
+    def __init__(self, nombre) -> None:
         self._nombre = nombre
-        self._estado = estado
         
     @property
     def nombre(self):
@@ -13,4 +12,5 @@ class Persona:
         
     def movimiento(self, accion):
         print(f'{self._nombre} = {accion}')
-        self._estado = accion
+        
+        
