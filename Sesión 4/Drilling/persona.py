@@ -8,9 +8,7 @@ class Persona:
     
     @nombre.setter
     def nombre(self, nombre):
-        self._nombre= nombre
+        self._nombre = nombre
         
     def movimiento(self, accion):
         print(f'{self._nombre} = {accion}')
-        
-        
