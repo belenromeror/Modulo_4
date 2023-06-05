@@ -15,7 +15,19 @@ def escribir_archivo(lista):
     except Exception as e:
         print(f"Error: {e}")
 
+def leer_archivo():
+    try:
+        with open("informacion.dat", "r") as file:
+            datos = file.readlines()
+            for linea in datos:
+                print(linea.strip())
+    except FileNotFoundError:
+        print("Error: El archivo no existe")
+    except Exception as e:
+        print(f"Error: {e}")
+
 lista = ["Datos de información en la línea 1", "\nDatos de información en la línea 2", "\nDatos de información en la línea 3", "\nDatos de información en la línea 4", "\nDatos de información en la línea 5"]
 
 crear_archivo()
 escribir_archivo(lista)
+leer_archivo()
